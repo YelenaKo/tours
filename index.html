@@ -5,16 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>WebCams</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
           margin: 0;
         }
+        .container {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+        }
         iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
           width: 100%;
           height: 100vh;
+          border: none;
         }
     </style>
   </head>
   <body>
-    <iframe src="https://www.google.com/maps/d/embed?mid=1T9FeJ8mgZ7N5BR5tSleoKo2H1IzWqA8&ehbc=2E312F" height="480"></iframe>
+    <div class="container">
+      <iframe src="https://www.google.com/maps/d/embed?mid=1T9FeJ8mgZ7N5BR5tSleoKo2H1IzWqA8&ehbc=2E312F"></iframe>
+    </div>
   </body>
 </html>
